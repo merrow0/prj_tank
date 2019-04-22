@@ -134,6 +134,25 @@
             }
         },
         {
+            "Key": "71105006-d6c4-4090-9594-1eabfe6c3a67",
+            "Value": {
+                "id": "ab69c46b-168d-4f78-8374-924594c722c4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/tank_controller\/tank_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "727964ea-8e2f-4ce8-acdc-7b258cf7b866",
             "Value": {
                 "id": "06f2e235-62b5-4763-a08e-5deef40040df",
@@ -148,7 +167,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/room0\/room0.yy",
+                "resourcePath": "rooms\/level\/level.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -340,6 +359,25 @@
                 ],
                 "resourcePath": "views\/d0bbe40e-bae5-421b-8052-081f2209dbcf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e9f53ece-7493-4845-aab7-31613c2b557f",
+            "Value": {
+                "id": "8ae46a37-63b0-480c-a8d3-04a52b539c99",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/game_controller\/game_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
