@@ -96,6 +96,44 @@
             }
         },
         {
+            "Key": "1eb483cb-5c36-458c-b63a-db846a00f1ce",
+            "Value": {
+                "id": "327088ba-291c-48d5-a420-ed7c58c8e6a4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_commander\/obj_commander.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "20e1909b-1bf7-48c0-a4c9-501f25d96b19",
+            "Value": {
+                "id": "a8ed5f73-64cc-4c48-a1cb-b49cae1dbda1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/20e1909b-1bf7-48c0-a4c9-501f25d96b19.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "49863122-c76f-4a31-92cf-c99509effa0a",
             "Value": {
                 "id": "99d29541-6d1a-4b03-8659-4e20596568b6",
@@ -134,6 +172,25 @@
             }
         },
         {
+            "Key": "5eae10c1-75fd-4415-85ce-b6bba62bcb1e",
+            "Value": {
+                "id": "446a04af-8faa-4cc3-a534-2494e75914d2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_stoker\/obj_stoker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "71105006-d6c4-4090-9594-1eabfe6c3a67",
             "Value": {
                 "id": "ab69c46b-168d-4f78-8374-924594c722c4",
@@ -148,7 +205,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/tank_controller\/tank_controller.yy",
+                "resourcePath": "objects\/obj_tank\/obj_tank.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -207,6 +264,25 @@
                 ],
                 "resourcePath": "views\/8fecfe0e-914c-4a2a-b1e1-99afeafd88be.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "93d0f635-0d23-4667-9b6f-e3fddcf7861c",
+            "Value": {
+                "id": "4b59d651-1859-4d7c-bcc1-bea1974690cf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_engineer\/obj_engineer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -376,7 +452,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/game_controller\/game_controller.yy",
+                "resourcePath": "objects\/obj_game_controller\/obj_game_controller.yy",
                 "resourceType": "GMObject"
             }
         },

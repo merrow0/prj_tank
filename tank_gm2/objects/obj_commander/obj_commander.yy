@@ -1,10 +1,19 @@
 {
-    "id": "71105006-d6c4-4090-9594-1eabfe6c3a67",
+    "id": "1eb483cb-5c36-458c-b63a-db846a00f1ce",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "tank_controller",
+    "name": "obj_commander",
     "eventList": [
-        
+        {
+            "id": "456394c3-b5d6-4266-80d4-955dbd0f8aba",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1eb483cb-5c36-458c-b63a-db846a00f1ce"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
