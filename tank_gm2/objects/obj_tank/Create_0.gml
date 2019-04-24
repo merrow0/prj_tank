@@ -1,3 +1,3 @@
-instance_create_layer(x, y, "Instances", obj_commander);
-instance_create_layer(x, y, "Instances", obj_engineer);
-instance_create_layer(x, y, "Instances", obj_stoker);
+event_inherited();
+
+inst_turret = instance_create_layer(x, y, "turret", obj_turret);

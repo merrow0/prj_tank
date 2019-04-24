@@ -5,7 +5,7 @@
     "name": "obj_tank",
     "eventList": [
         {
-            "id": "6ba93e5a-b068-4d05-b49c-358fb65021b5",
+            "id": "d298d5be-a02a-4024-a855-102eeca06d24",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -13,11 +13,21 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "71105006-d6c4-4090-9594-1eabfe6c3a67"
+        },
+        {
+            "id": "288255dc-ec86-404b-9a3b-81558f717ba7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "71105006-d6c4-4090-9594-1eabfe6c3a67"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "87943484-d3e9-41fb-929a-12713377d62e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

@@ -55,22 +55,6 @@
             }
         },
         {
-            "Key": "1eb483cb-5c36-458c-b63a-db846a00f1ce",
-            "Value": {
-                "id": "327088ba-291c-48d5-a420-ed7c58c8e6a4",
-                "resourcePath": "objects\/obj_commander\/obj_commander.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "20e1909b-1bf7-48c0-a4c9-501f25d96b19",
-            "Value": {
-                "id": "a8ed5f73-64cc-4c48-a1cb-b49cae1dbda1",
-                "resourcePath": "views\/20e1909b-1bf7-48c0-a4c9-501f25d96b19.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "24f481e1-c017-4dd1-9765-b0ef7101c478",
             "Value": {
                 "id": "beea047c-ba19-4f04-bbdb-beb3b65459af",
@@ -95,10 +79,10 @@
             }
         },
         {
-            "Key": "5eae10c1-75fd-4415-85ce-b6bba62bcb1e",
+            "Key": "5f93df38-5761-41f2-8c76-262729de2203",
             "Value": {
-                "id": "446a04af-8faa-4cc3-a534-2494e75914d2",
-                "resourcePath": "objects\/obj_stoker\/obj_stoker.yy",
+                "id": "cf9fefeb-305d-4ae4-8073-c05242c3a558",
+                "resourcePath": "objects\\obj_turret\\obj_turret.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -127,6 +111,14 @@
             }
         },
         {
+            "Key": "87943484-d3e9-41fb-929a-12713377d62e",
+            "Value": {
+                "id": "b8588b43-97df-4c73-abba-4e0557e5df81",
+                "resourcePath": "objects\\obj_entity\\obj_entity.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8fecfe0e-914c-4a2a-b1e1-99afeafd88be",
             "Value": {
                 "id": "17e2ab94-417b-484a-bffa-ca97e4cc90d0",
@@ -135,11 +127,11 @@
             }
         },
         {
-            "Key": "93d0f635-0d23-4667-9b6f-e3fddcf7861c",
+            "Key": "9b33ffc7-889c-4b4f-a828-61105f70afdb",
             "Value": {
-                "id": "4b59d651-1859-4d7c-bcc1-bea1974690cf",
-                "resourcePath": "objects\/obj_engineer\/obj_engineer.yy",
-                "resourceType": "GMObject"
+                "id": "21e62d32-2d69-47fd-b1d4-516b567734e1",
+                "resourcePath": "sprites\\spr_turret\\spr_turret.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -203,6 +195,14 @@
             "Value": {
                 "id": "a6583b68-8ddf-4a4f-8056-d66ddd4aaa6e",
                 "resourcePath": "views\/d0bbe40e-bae5-421b-8052-081f2209dbcf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d2e3e603-3460-4a79-8576-412795c32b52",
+            "Value": {
+                "id": "39da5bc9-bf1a-4c54-8e38-08dcfd9c6840",
+                "resourcePath": "views\\d2e3e603-3460-4a79-8576-412795c32b52.yy",
                 "resourceType": "GMFolder"
             }
         },

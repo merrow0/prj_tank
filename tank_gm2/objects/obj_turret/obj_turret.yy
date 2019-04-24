@@ -1,19 +1,10 @@
 {
-    "id": "5eae10c1-75fd-4415-85ce-b6bba62bcb1e",
+    "id": "5f93df38-5761-41f2-8c76-262729de2203",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_stoker",
+    "name": "obj_turret",
     "eventList": [
-        {
-            "id": "9c81e47b-17c3-4ee0-8a6e-e465cbb96863",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "5eae10c1-75fd-4415-85ce-b6bba62bcb1e"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "9b33ffc7-889c-4b4f-a828-61105f70afdb",
     "visible": true
 }
