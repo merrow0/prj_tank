@@ -14,6 +14,14 @@ if (current_state == state.INIT)
 		{
 			current_state = state.MOVE;
 		}
+		else if (cmd == cmd_queue_enum.TURN_LEFT || cmd == cmd_queue_enum.TURN_RIGHT)
+		{
+			current_state = state.TURN;
+		}
+		else if (cmd == cmd_queue_enum.TURRET_LEFT || cmd == cmd_queue_enum.TURRET_RIGHT)
+		{
+			current_state = state.TURRET_TURN;
+		}
 	}
 	else
 	{
@@ -30,22 +38,22 @@ if (current_state == state.MOVE)
 		var off_x = 0;
 		var off_y = 0;
 		
-		if (direction == 0)
+		if (image_angle == 0)
 		{
 			off_x = obj_game_controller.TILE_WIDTH;
 			off_y = 0;
 		}
-		else if (direction == 90)
+		else if (image_angle == 90)
 		{
 			off_x = 0;
 			off_y = -obj_game_controller.TILE_HEIGHT;
 		}
-		else if (direction == 180)
+		else if (image_angle == 180)
 		{
 			off_x = -obj_game_controller.TILE_WIDTH;
 			off_y = 0;
 		}
-		else if (direction == 270)
+		else if (image_angle == 270)
 		{
 			off_x = 0;
 			off_y = obj_game_controller.TILE_HEIGHT;
@@ -64,12 +72,50 @@ if (current_state == state.MOVE)
 			path_start(move_path, 1, path_action_stop, false);
 		}
 	}
-	else if (path_position == 1) {
-		// path_end();
+	else if (path_position == 1)
+	{
+		path_end();
 		path_position = 0;
+		current_state = state.INIT;
+	}
+}
+else if (current_state == state.TURN)
+{
+	if (cmd == cmd_queue_enum.TURN_LEFT && dest_image_angle == image_angle)
+	{
+		if (image_angle + 90 > 360)
+		{
+			image_angle = 0;
+		}
+		
+		dest_image_angle = image_angle + 90;
+	}
+	else if (cmd == cmd_queue_enum.TURN_RIGHT && dest_image_angle == image_angle)
+	{
+		if (image_angle - 90 < 0)
+		{
+			image_angle = 360;
+		}
+		
+		dest_image_angle = image_angle - 90;
+	}
+	
+	if (image_angle != dest_image_angle)
+	{
+		if (dest_image_angle > image_angle)
+		{
+			image_angle += 1;
+		}
+		else
+		{
+			image_angle -= 1;
+		}	
+	}
+	
+	if (dest_image_angle == image_angle)
+	{
 		current_state = state.INIT;
 	}
 }
 
 
-image_angle = direction;
