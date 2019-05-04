@@ -1,37 +1,37 @@
-if (execute_cmd_queue && current_state == state.NONE)
+if (obj_game_controller.phase == phase_enum.COMMAND_EXECUTE && current_state == state_enum.NONE)
 {
-	current_state = state.INIT;
+	current_state = state_enum.INIT;
 }
 
-if (current_state == state.INIT)
+if (current_state == state_enum.INIT)
 {
-	if (ds_list_size(cmd_queue) > 0)
+	if (ds_list_size(COMMAND_QUEUE) > 0)
 	{
-		cmd = ds_list_find_value(cmd_queue, 0);
-		ds_list_delete(cmd_queue, 0);
+		cmd = ds_list_find_value(COMMAND_QUEUE, 0);
+		ds_list_delete(COMMAND_QUEUE, 0);
 		
 		if (cmd == cmd_queue_enum.MOVE_FORWARD || cmd == cmd_queue_enum.MOVE_BACKWARD)
 		{
-			current_state = state.MOVE;
+			current_state = state_enum.MOVE;
 		}
 		else if (cmd == cmd_queue_enum.TURN_LEFT || cmd == cmd_queue_enum.TURN_RIGHT)
 		{
-			current_state = state.TURN;
+			current_state = state_enum.TURN;
 		}
 		else if (cmd == cmd_queue_enum.TURRET_LEFT || cmd == cmd_queue_enum.TURRET_RIGHT)
 		{
-			current_state = state.TURRET_TURN;
+			current_state = state_enum.TURRET_TURN;
 		}
 	}
 	else
 	{
-		execute_cmd_queue = false;
-		current_state = state.NONE;
+		obj_game_controller.phase = phase_enum.END;
+		current_state = state_enum.NONE;
 	}
 }
 
 
-if (current_state == state.MOVE)
+if (current_state == state_enum.MOVE)
 {
 	if (path_position == 0)
 	{
@@ -76,10 +76,10 @@ if (current_state == state.MOVE)
 	{
 		path_end();
 		path_position = 0;
-		current_state = state.INIT;
+		current_state = state_enum.INIT;
 	}
 }
-else if (current_state == state.TURN)
+else if (current_state == state_enum.TURN)
 {
 	if (cmd == cmd_queue_enum.TURN_LEFT && dest_image_angle == image_angle)
 	{		

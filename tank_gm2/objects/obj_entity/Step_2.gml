@@ -1,4 +1,4 @@
-if (current_state == state.TURN && dest_image_angle == image_angle)
+if (current_state == state_enum.TURN && dest_image_angle == image_angle)
 {
-	current_state = state.INIT;
+	current_state = state_enum.INIT;
 }
