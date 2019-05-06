@@ -9,3 +9,4 @@ for (var i = 0; i < ds_list_size(inst_tank.COMMAND_QUEUE); i++)
 draw_text(300, 10, "validate_queue_idx: " + string(validate_queue_idx));
 draw_text(300, 30, "inst_arrow.image_index: " + string(inst_arrow.image_index));
 
+draw_text(800, 30, "current_pad_id: " + string(current_pad_id));

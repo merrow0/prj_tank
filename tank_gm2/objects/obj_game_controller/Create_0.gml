@@ -38,10 +38,13 @@ GAMEPAD_QUEUE = ds_list_create();
 COMMAND_VALIDATE_QUEUE = ds_list_create();
 
 turn = turn_enum.PLAYER_TURN;
-phase = phase_enum.COMMAND_INPUT;
+phase = phase_enum.PLAYER_SELECT;
 validate_queue_idx = 0;
+current_pad_id = noone;
 
 grid = mp_grid_create(0, 0, GRID_WIDTH , GRID_HEIGHT, TILE_WIDTH, TILE_HEIGHT);
+
+randomize();
 
 var maxpads = gamepad_get_device_count();
 for (var i = 0; i < maxpads; i++)
@@ -53,6 +56,9 @@ for (var i = 0; i < maxpads; i++)
 }
 
 ds_list_add(GAMEPAD_QUEUE, 4);
+ds_list_add(GAMEPAD_QUEUE, 5);
+// ds_list_add(GAMEPAD_QUEUE, 6);
 
 inst_tank = instance_create_layer(5*TILE_WIDTH, 5*TILE_HEIGHT, "hull", obj_tank);
 inst_arrow = instance_create_layer(room_width div 2, room_height / 2, "top", obj_arrow);
+inst_player = instance_create_layer(room_width div 2, room_height / 2 + 50, "top", obj_player);
