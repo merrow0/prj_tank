@@ -55,7 +55,10 @@ if (ds_list_size(GAMEPAD_QUEUE) > 0)
 		{
 			var validate_item = ds_list_find_value(COMMAND_VALIDATE_QUEUE, validate_queue_idx);
 			
-			switch(validate_item[0])
+			current_validate_direction = validate_item[0];
+			current_pad_id = validate_item[1];
+			
+			switch(current_validate_direction)
 			{
 				case validate_enum.UP:
 					inst_arrow.image_index = 1; break;
@@ -67,7 +70,25 @@ if (ds_list_size(GAMEPAD_QUEUE) > 0)
 					inst_arrow.image_index = 4; break;
 			}
 			
-			current_pad_id = validate_item[1];
+			for (var i = 0; i < ds_list_size(GAMEPAD_QUEUE); i++)
+			{
+				if (gamepad_button_check_pressed(ds_list_find_value(GAMEPAD_QUEUE, i), gp_padl))
+				{
+					ds_list_add(COMMAND_INPUT_QUEUE, [validate_enum.LEFT, ds_list_find_value(GAMEPAD_QUEUE, i)]);
+				}
+				if (gamepad_button_check_pressed(ds_list_find_value(GAMEPAD_QUEUE, i), gp_padr))
+				{
+					ds_list_add(COMMAND_INPUT_QUEUE, [validate_enum.RIGHT, ds_list_find_value(GAMEPAD_QUEUE, i)]);
+				}
+				if (gamepad_button_check_pressed(ds_list_find_value(GAMEPAD_QUEUE, i), gp_padu))
+				{
+					ds_list_add(COMMAND_INPUT_QUEUE, [validate_enum.UP, ds_list_find_value(GAMEPAD_QUEUE, i)]);
+				}
+				if (gamepad_button_check_pressed(ds_list_find_value(GAMEPAD_QUEUE, i), gp_padd))
+				{
+					ds_list_add(COMMAND_INPUT_QUEUE, [validate_enum.DOWN, ds_list_find_value(GAMEPAD_QUEUE, i)]);
+				}
+			}
 		}
 	}
 }

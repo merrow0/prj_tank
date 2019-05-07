@@ -36,11 +36,13 @@ GRID_HEIGHT =  room_height div TILE_HEIGHT;
 VALIDATE_FRAMES = 60;
 GAMEPAD_QUEUE = ds_list_create();
 COMMAND_VALIDATE_QUEUE = ds_list_create();
+COMMAND_INPUT_QUEUE = ds_list_create();
 
 turn = turn_enum.PLAYER_TURN;
 phase = phase_enum.PLAYER_SELECT;
 validate_queue_idx = 0;
 current_pad_id = noone;
+current_validate_direction = noone;
 
 grid = mp_grid_create(0, 0, GRID_WIDTH , GRID_HEIGHT, TILE_WIDTH, TILE_HEIGHT);
 
