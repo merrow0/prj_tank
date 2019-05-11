@@ -67,12 +67,17 @@ if (current_state == state_enum.MOVE)
 		}
 		
 		
-		if (mp_grid_path(obj_game_controller.grid, move_path, x, y, x + off_x, y + off_y, false))
+		if (mp_grid_path(obj_game_controller.path_grid, move_path, x, y, x + off_x, y + off_y, false))
 		{
 			path_start(move_path, 1, path_action_stop, false);
 		}
+		else
+		{
+			path_position = 1;
+		}	
 	}
-	else if (path_position == 1)
+	
+	if (path_position == 1)
 	{
 		path_end();
 		path_position = 0;
